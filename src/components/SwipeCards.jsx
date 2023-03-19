@@ -12,10 +12,10 @@ import { Autoplay, Navigation } from "swiper";
 
 const SwiperCards = () => {
   return (
-    <div>
+    <div className="max-h-full">
       <Swiper
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         centeredSlides={true}
@@ -42,7 +42,7 @@ const SwiperCards = () => {
       >
         <SwiperSlide>
           <div className="flex flex-col gap-2">
-            <img width="600" src="images/1.jpg" alt="" />
+            <img width="600" height="600" src="images/1.jpg" alt="" />
             <h2 className="px-2">Titulo #1</h2>
             <p className="px-2">descripcion</p>
           </div>
